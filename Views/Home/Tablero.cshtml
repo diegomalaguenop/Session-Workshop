@@ -1,0 +1,16 @@
+@model Usuario
+
+<h1>Tablero</h1>
+<p>Bienvenido, @Model.Nombre</p>
+<p>Valor Numérico: @Model.ValorNumerico</p>
+
+<div>
+    <a asp-action="Sumar">+ 1</a>
+    <a asp-action="Restar">- 1</a>
+    <a asp-action="Multiplicar">x 2</a>
+    <a asp-action="Random">Random</a>
+</div>
+
+<form asp-action="CerrarSesion" method="post">
+    <button type="submit">Cerrar Sesión</button>
+</form>
